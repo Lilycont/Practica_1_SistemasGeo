@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Practica 1</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link href="./style.css" rel="stylesheet">
+      <style>
+            #mapa {
+                  width: 100%;
+                  height: 500px;
+            }
+      </style>
+</head>
+<body>
+      <div class="container-fluid ncolor">
+                  <nav class="navbar navbar-expand-lg navbar-light " style="background:#f3e6e3">
+                        <div class="container-fluid">
+                              <img src="https://image.freepik.com/vector-gratis/logo-pastel-panaderia-cupcake_23-2148466201.jpg" alt="" width="80" height="80">
+                              <a class="navbar-brand" style="color:#F08080;" href="#">Cakes</a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                              <li class="nav-item">
+                                    <a class="nav-link active" style="color:#B58277;" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" style="color:#B58277;" href="#servicios">Servicios</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" style="color:#B58277;" href="#mapadeubicacion">Ubicación</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                              </li>
+                              </ul>
+                              </div>
+                        </div>
+                  </nav>
+            
+      </div>
+
+ 
+                  <div id="carouselExampleControls" data-aos="fade-right" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner CLimiter">
+                              <div class="carousel-item active Citem">
+                              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item Citem">
+                              <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item Citem">
+                              <img src="https://images.unsplash.com/photo-1560269081-ad5887dd973c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="d-block w-100" alt="...">
+                              </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                        </button>
+                  </div>
+   
+
+
+
+      <div class="container-fluid ncolor2">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12">
+                              <h1 class="text-light text-center">Practica 1 Postres Gourmet</h1>
+                              <p class="text-light">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container-fluid  py-5">
+            <div class="container ">
+                  <div class="row">
+                       
+                        <div class="card col-12 col-md-4 ncolor7 " data-aos="zoom-in" style="width: 27rem;">
+                              <br>
+                              <img src="https://images.unsplash.com/photo-1604672857367-a0d662dfd7f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top w-100 rounded shadow" alt="...">
+                              <div class="card-body">
+                                    <h2 class="p-3 text-center">Donas</h2>
+                                <p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                              </div>
+                        </div>
+                        <div class="card col-12 col-md-4 ncolor" data-aos="zoom-in" style="width: 27rem;">
+                              <br>
+                              <img src="https://images.unsplash.com/photo-1571509872177-cb5594829261?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top w-100 rounded shadow" alt="...">
+                              <div class="card-body">
+                                    <h2 class="p-3 text-center">Cupcakes</h2>
+                                <p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                              </div>
+                        </div>
+                        <div class="card col-12 col-md-4 ncolor8" data-aos="zoom-in" style="width: 27rem;">
+                              <br>
+                              <img src="https://images.unsplash.com/photo-1586985290301-8db40143d525?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top w-100 rounded shadow" alt="...">
+                              <div class="card-body">
+                                    <h2 class="p-3 text-center">Postres de mesa </h2>
+                                <p class="card-text">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container-fluid py-5">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12">
+                              <a name="mapadeubicacion"></a>
+                              <h2 class="text-center">MAPA DE UBICACIÓN</h2>
+                              <div id="mapa"></div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container-fluid py-5 ncolor3">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-12 col-md-4">
+                              <h3 class="text-white">Contáctanos</h3>
+                              <p class="text-white">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                              
+                        </div>
+                        <div class="col-12 col-md-4">
+                              <h3 class="text-white text-end">Redes</h3>
+                              <p class="text-white"></p>
+                        </div>
+                  </div>
+                  
+            </div>
+      </div>
+
+
+
+
+      <span>Photo by <a href="https://unsplash.com/@miabaker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mia Baker</a> on <a href="https://unsplash.com/t/business-work?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+      <!-- Google Maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByTS79kRtbLgSldFKhquwfBM969bp2X6k&callback=iniciaMapa" async defer></script>
+
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+
+            AOS.init();
+
+            function iniciaMapa() {
+                  var coordenadas = {
+                        lat : 21.152639, lng : -101.711598
+                  }
+
+                  var map = new google.maps.Map(document.getElementById('mapa'),
+                        {
+                              center : coordenadas,
+                              zoom : 15 
+                        }
+                  ); 
+            }
+      </script>
+</body>
+</html>
