@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Obtiene Coordenadas</title>
+</head>
+<body>
+
+   <h1 class="fuente1 text-center">Haz clic para obtener las coordenadas de tu dispositivo</h1>
+<div class="text-center">
+  <button class="btn btn-outline-info forma" onclick="getLocation()">Obtener Coordenadas</button>
+</div>
+  
+  
+  <p class="text-center" id="demo"></p>
+  
+  <script>
+  var x = document.getElementById("demo");
+  
+  function getLocation() {
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "El navegador no dispone la capacidad de geolocalización";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "<br>Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>
+
+    
+</body>
+</html>
