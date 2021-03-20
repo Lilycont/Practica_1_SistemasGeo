@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Practica 8</title>
+  <style>
+    #map{
+      width: 100%;
+      height: 650px;
+    }
+    html, body{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    .backgroundcolor-ej8{
+      background: linear-gradient(90deg, rgb(27, 90, 51) 0%, rgba(93, 252, 107, 0.485) 50%, rgb(99, 240, 153) 100%);
+      height: 100vh;
+    }
+    .bluecol{
+      color: rgb(43, 255, 0);
+    }
+    .redcol{
+      color:rgb(0, 255, 106)
+    }
+    .yellowcol{
+      color:rgb(107, 228, 102)
+    }
+    .greencol{
+      color: rgb(91, 209, 91)
+    }
+  </style>
+</head>
+<body>
+  <form>
+  <div class="container-fluid backgroundcolor-ej8">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-center text-white">
+          <h1><span class="bluecol">G</span><span class="redcol">o</span><span class="yellowcol">o</span><span class="bluecol">g</span><span class="greencol">l</span><span class="redcol">e</span> Maps Idioms</h1>
+        </div>
+        <div class="col-6 text-center">
+          <select name="idioma" id="idioma" class="form-select" onchange="this.form.submit()" >
+            <option disabled selected>Selecciona una opción</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japones</option>
+            <option value="ar">Arabe</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+  <script src="./script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

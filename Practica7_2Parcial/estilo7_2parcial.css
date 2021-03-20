@@ -1,0 +1,16 @@
+#map{
+    width: 100%;
+    height: 650px;
+  
+  }
+  
+  html, body{
+    height: 100%;
+    width: 100%;
+    
+  }
+  .backgroundcolor-ej8{
+        background: linear-gradient(0deg, rgba(240,244,255,1) 0%, rgba(39,178,222,1) 24%, rgba(54,42,235,1) 48%, rgba(47,188,245,1) 61%, rgba(44,191,246,1) 79%, rgba(44,52,252,0.8914916308320203) 100%);
+        height: 100vh;
+      }
+      
