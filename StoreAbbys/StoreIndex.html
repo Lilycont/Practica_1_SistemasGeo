@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link href="./Fuentes.css" rel="stylesheet">
+    <style>
+      #divMap {
+          width: 100%;
+          height: 600px;
+      }
+    </style>  
+    <title>TiendaAbby's</title>
+  </head>
+  <body>
+      <div class="container-fluid" style="background-color:#FCF3F7 ;">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand" href="#">
+            <img src="./Img/LogoTiendaAbbys.png" alt="" width="80" height="35" class="d-inline-block align-text-top">
+          </a>
+            <a class="navbar-brand" style="color: #D00660;" href="./StoreIndex.html">Tienda Abby's</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./giftspaperstore.html">Envolturas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nailsindex.html" >Press On Nails</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./balloonsstore.html" >Globos</a>
+                </li>
+              </ul>
+          </div>
+          <div class="nav navbar-nav navbar-right">
+            <a onclick="salir()" style="cursor: pointer;"> <img src="./Img/salir.png" height="20" width="20" class="img-fluid" ></a>
+         </div>
+        </nav>
+      </div>
+
+      <!--Imagen Principal-->
+    <div class="text-center" >
+      <img src="./Img/ImgenPrincTiendaAbbys.png"  height="550" width="1000" class="img-fluid" >
+    </div>
+    
+
+
+
+
+    <!----PARTE DE TARJETAS -->
+    <div class="container text-center">
+      <div class="row" >
+        <div class="col-md-4 col-sm-6 col-12 pb-4" >
+          <div class="card basesombra load" >
+            <img src="./Img/JoyeriaInoxidable.png" class="card-img-top " alt="...">
+            <div class="card-body fuente1">
+              <p class="card-text">Joyeria en acero inoxidable</p>
+              <button class="button" style="position:absolute; right: 0;" 
+                onclick="openModalProducts('Joyeria en acero inoxidable', './Img/modals/Joyeria1.png','./Img/modals/Joyeria2.png','./Img/modals/Joyeria3.png','./Img/modals/Joyeria4.png', 'Juego Corazón','Collar corazon','Collar redondo','Juego Mariposa','$230','$150', '$250', '$350')"><span>VER</span></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6 col-12 pb-4">
+          <div class="card basesombra" >
+            <img src="./Img/Relojesimg1.png" class="card-img-top " alt="...">
+            <div class="card-body fuente1">
+              <p class="card-text">Relojes para dama y caballero</p>
+              <button class="button" style="position:absolute; right: 0;"
+                onclick="openModalProducts('Relojes para Dama y Caballero', './Img/modals/Reloj1.png','./Img/modals/Reloj2.png','./Img/modals/Reloj3.png','./Img/modals/Reloj4.png', 'Reloj RoseGold','Reloj Plata','Reloj Dorado','Reloj RoseC','$350','$230', '$260', '$320')"><span>VER</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 pb-4">
+          <div class="card basesombra" >
+            <img src="./Img/Cajas1reg.png" class="card-img-top " alt="...">
+            <div class="card-body fuente1">
+              <p class="card-text">Cajas de todos los colores</p>
+              <button class="button" style="position:absolute; right: 0;"
+                onclick="openModalProducts('Cajas de Todos los Colores', './Img/modals/Caja1.png','./Img/modals/Caja2.png','./Img/modals/Caja3.png','./Img/modals/Caja4.png', 'Caja cuadrada','Caja Flores 2','Caja Flores 1','Caja rosa','$50','$60', '$35', '$55')"><span>VER</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" style="color:white">
+      <h1>LOS REGALOS MÁS ORIGINALES</h1>
+    </div>
+   <!--Imagen 2-->
+    <div class="container-fluid" style="background-color: #fec8d8;" >
+     <div class="row">
+      <div class="col text-center"  style="color: white;"> 
+        <h1 style="color: #fec8d8;">ihfoiajdfoekapfew</h1>
+       <h2 class="animate__animated animate__lightSpeedInRight fuente1"> MÁS DE 25 AÑOS ENVOLVIENDO </h2>
+       <p class="animate__animated animate__rotateIn text-center fuente1">No solo nos determina nuestro buen gusto si no las sonrisas en nuestros regalos...</p>
+    </div>
+       </div>
+    </div>
+    <!--Imagenes regalos pequenios-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <img src="./Img/regalo1.png"  height="400" width="400" class="img-fluid" >
+        </div>
+        <div class="col-md-4 col-sm-6 col-12"><img src="./Img/regalo2.png"  height="400" width="400" class="img-fluid" ></div>
+        <div class="col-md-4 col-sm-6 col-12"><img src="./Img/regalo3.png"  height="400" width="400" class="img-fluid" ></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        </div>
+        <div class="col"></div>
+      </div> 
+    </div>
+     <!--Imagen 2-->
+     <div class="container-fluid" style="background-color: #d46993;" >
+      <div class="row">
+       <div class="col text-center"  style="color:#d46993 ;"> 
+        <h2 > MÁS DE 25 AÑOS ENVOLVIENDO </h2>
+        <p >No solo nos determinar nuestro buen gusto si no las sonrisas en nuestros regalos...</p>
+     </div>
+        </div>
+     </div>
+
+<div class="container text-center" style="color:white">
+  <h1>LOS REGALOS MÁS ORIGINALES</h1>
+</div>
+
+<!----PARTE DE ANILLOS -->
+<div class="container text-center">
+  <div class="row" >
+    <div class="col-md-4 col-sm-6 col-12 pb-4 boxcontainer ">
+      <img src="./Img/Anillo1.png"  height="400" width="400" class="img-fluid" >
+      <button class="button" style="position:relative;" onclick="openModalRings('Anillo 1', '$5,000', './Img/Anillo1.png')"><span>Oferta</span></button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 pb-4 boxcontainer" ><img src="./Img/Anillo2.png"  height="400" width="400" class="img-fluid" >
+      <!-- <button class="button" style="position:relative;"><span>Oferta</span></button> -->
+    </div>
+    <div class="col-md-4 col-sm-6 col-12 pb-4 boxcontainer " ><img src="./Img/Anillo3.png"  height="400" width="400" class="img-fluid" >
+      <button class="button" style="position:relative;" onclick="openModalRings('Anillo 2', '$20,000', './Img/Anillo3.png')"><span>Oferta</span></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+    </div>
+    <div class="col"></div>
+  </div> 
+</div>
+<div class="container text-center" style="color:white">
+  <h1>LOS REGALOS MÁS ORIGINALES</h1>
+</div>
+
+<div class="row" >
+  <div class="col-md-4 col-sm-6 col-12" style="background-color:#ff1087 ; text-align: center;" >
+    <img class="my-2" src="./Img/insta1.png">
+    <h5 class="fuente1" style="color: white;" >@TiendaAbby's</h5>
+  
+  </div>
+  <div class="col-md-4 col-sm-6 col-12" style="background-color:#6e3b64; text-align: center;">
+    <img class="my-2" src="./Img/faceb1.png">
+    <h5 class="fuente1" style="color: white;">Tienda Abby's</h5>
+    </div>
+  <div class="col-md-4 col-sm-12 col-12" style="background-color:#957dad; text-align: center;">
+    <img class="my-2" src="./Img/whats1.png">
+    <h5 class="fuente1" style="color: white;">69500136</h5>
+  </div>
+  <div class="container ">
+    <div id="divMap"></div>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col"></div>
+  <div class="col">
+  </div>
+  <div class="col"></div>
+</div> 
+
+<!-- IMG escaladas
+<div class="container">
+ <div class="row">
+<div class="col">
+  <img src=""  height="550" width="1000" class="img-fluid" >
+   
+</div>
+<div class="col"></div>
+<div class="col"><img src=""  height="550" width="1000" class="img-fluid" ></div>
+ </div>
+ <div class="row">
+  <div class="col"></div>
+  <div class="col"><img src=""  height="550" width="1000" class="img-fluid" ></div>
+  <div class="col"></div>
+   </div>
+</div>-->
+    <script>
+      if(!localStorage.getItem('user')) {
+        window.location.href = "loginstore.html"
+      }
+      var salir = () => {
+        localStorage.removeItem('user')
+        window.location.href = "loginstore.html"
+      }
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Maps-->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtShPcWpfqEylEVArX0heYsXkShAPjvVU&callback=initMap"
+    async defer></script>
+    <script src="StoreScript.js"></script>
+    <script src="Map.js"></script>
+  </body>
+</html>

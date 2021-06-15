@@ -1,0 +1,70 @@
+.fuente1{
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.basesombra{
+    box-shadow: 10px 5px 5px #f49eb7;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #6e3b64;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .boxcontainer{
+    position: relative;
+   background:transparent;
+  
+    height: 10%;
+    padding: 25px;
+    padding-left: 5px;
+ 
+}
+.boxshadows{
+  position: relative;
+  background:transparent;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.boxcontainer img{
+  border-radius: 25px;
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+  
